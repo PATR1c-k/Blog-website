@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 mongoose.set('strictQuery', false);
-mongoose.connect("mongodb+srv://pratik:test123@cluster0.am5xmqs.mongodb.net/BlogDB", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://{NAME}:{Password}@cluster0.am5xmqs.mongodb.net/BlogDB", { useNewUrlParser: true });
 
 const postSchema = {
   title: String,
